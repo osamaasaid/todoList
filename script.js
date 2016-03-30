@@ -1,5 +1,5 @@
 console.log("list open");
-
+// testing the appending
 function createNewItem(list){
   var listItems = document.createElement("li");
   listItems.innerText = "task";
