@@ -1,15 +1,12 @@
 console.log("list open");
-// testing the appending
-function createNewItem(list){
-  var listItems = document.createElement("li");
-  listItems.innerText = "task";
 
-  list.appendChild(listItems);
-}
+document.getElementById('addBtn').addEventListener('click', function(e){
+var newItem = document.createElement('li');
+var task = document.getElementById("item").value;
+newItem.innerHTML = task;
+document.getElementById('todo').appendChild(newItem);
+});
 
 
-var newItem =document.getElementById('addBtn');
-newItem.onclick= function(){
-console.log("clicked");
-createNewItem(document.getElementById("items"));
-};
+
+
