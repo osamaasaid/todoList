@@ -15,8 +15,5 @@ ul{
 li{
   border:2px black;
   background: orange;
-  color: black;
-}
-#checkbox{
-  float: left;
+
 }
