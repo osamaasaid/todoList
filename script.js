@@ -4,7 +4,8 @@ var todoFunction = document.getElementById('addBtn').addEventListener('click', f
 var newItem = document.createElement('li');
 var task = document.getElementById("item").value;
  if (task === '') {
-  alert("cannot execute");
+  alert("No item to add");
+  return false;
  }
 var box = document.createElement('input');
 box.type = "checkbox";
